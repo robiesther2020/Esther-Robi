@@ -1,0 +1,2639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="EstherRobiClinic Headquarters - Quality healthcare, screening, diagnostics and patient treatment services.">
+
+  <meta name="keywords"
+        content="EstherRobiClinic, clinic, healthcare, screening, X-ray, body scanning, treatment, Isibania">
+
+  <title>EstherRobiClinic Headquarters | Quality Healthcare</title>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+  <!-- ICONS -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+
+    /* =====================================================
+       GENERAL SETTINGS
+    ===================================================== */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: #f5f9fb;
+      color: #243746;
+      line-height: 1.6;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: "Montserrat", sans-serif;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* =====================================================
+       TOP BAR
+    ===================================================== */
+
+    .top-bar {
+      background: #073b4c;
+      color: white;
+      padding: 9px 0;
+      font-size: 14px;
+    }
+
+    .top-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .top-content span {
+      margin-right: 20px;
+    }
+
+    .top-content i {
+      color: #56d6c2;
+      margin-right: 6px;
+    }
+
+    .top-social a {
+      color: white;
+      margin-left: 14px;
+      transition: 0.3s;
+    }
+
+    .top-social a:hover {
+      color: #56d6c2;
+    }
+
+    /* =====================================================
+       HEADER
+    ===================================================== */
+
+    header {
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    }
+
+    .header-inner {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icon {
+      width: 52px;
+      height: 52px;
+      background: linear-gradient(135deg, #087f8c, #073b4c);
+      color: white;
+      border-radius: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 25px;
+      box-shadow: 0 5px 15px rgba(7,59,76,0.2);
+    }
+
+    .logo-text h2 {
+      color: #073b4c;
+      font-size: 20px;
+    }
+
+    .logo-text p {
+      color: #087f8c;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    /* =====================================================
+       NAVIGATION
+    ===================================================== */
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      gap: 25px;
+    }
+
+    nav a {
+      color: #244452;
+      font-weight: 600;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #087f8c;
+    }
+
+    .nav-button {
+      background: #087f8c;
+      color: white !important;
+      padding: 11px 18px;
+      border-radius: 25px;
+    }
+
+    .nav-button:hover {
+      background: #073b4c;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 26px;
+      color: #073b4c;
+      cursor: pointer;
+    }
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .hero {
+      min-height: 620px;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(3,38,48,0.92),
+          rgba(3,38,48,0.70),
+          rgba(3,38,48,0.20)
+        ),
+        url("https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 700px;
+      padding: 80px 0;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      background: rgba(86,214,194,0.18);
+      border: 1px solid rgba(86,214,194,0.6);
+      color: #8df1df;
+      padding: 8px 15px;
+      border-radius: 30px;
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.08;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #56d6c2;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 650px;
+      color: #e8f5f7;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: none;
+      cursor: pointer;
+      padding: 14px 23px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #56d6c2;
+      color: #073b4c;
+    }
+
+    .btn-primary:hover {
+      background: white;
+      transform: translateY(-3px);
+    }
+
+    .btn-outline {
+      border: 2px solid white;
+      color: white;
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: #073b4c;
+    }
+
+    /* =====================================================
+       QUICK INFORMATION
+    ===================================================== */
+
+    .quick-section {
+      margin-top: -55px;
+      position: relative;
+      z-index: 5;
+    }
+
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.10);
+      overflow: hidden;
+    }
+
+    .quick-card {
+      padding: 28px 20px;
+      text-align: center;
+      border-right: 1px solid #e7eef1;
+    }
+
+    .quick-card:last-child {
+      border-right: none;
+    }
+
+    .quick-card i {
+      font-size: 30px;
+      color: #087f8c;
+      margin-bottom: 12px;
+    }
+
+    .quick-card h3 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .quick-card p {
+      color: #687983;
+      font-size: 13px;
+    }
+
+    /* =====================================================
+       SECTION HEADINGS
+    ===================================================== */
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 50px;
+    }
+
+    .section-heading .small-title {
+      color: #087f8c;
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .section-heading h2 {
+      font-size: 38px;
+      color: #073b4c;
+      margin-bottom: 14px;
+    }
+
+    .section-heading p {
+      color: #657780;
+    }
+
+    /* =====================================================
+       ABOUT
+    ===================================================== */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-image {
+      position: relative;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 25px;
+      box-shadow: 0 20px 50px rgba(7,59,76,0.18);
+    }
+
+    .experience-box {
+      position: absolute;
+      bottom: 25px;
+      right: -25px;
+      background: white;
+      padding: 22px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+
+    .experience-box strong {
+      display: block;
+      color: #087f8c;
+      font-size: 30px;
+    }
+
+    .about-text h2 {
+      color: #073b4c;
+      font-size: 38px;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      color: #657780;
+      margin-bottom: 18px;
+    }
+
+    .check-list {
+      list-style: none;
+      margin: 25px 0;
+    }
+
+    .check-list li {
+      margin: 12px 0;
+      color: #36515d;
+      font-weight: 500;
+    }
+
+    .check-list i {
+      color: #087f8c;
+      margin-right: 10px;
+    }
+
+    /* =====================================================
+       SERVICES
+    ===================================================== */
+
+    .services {
+      background: #eef7f8;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+      transition: 0.35s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    }
+
+    .service-image {
+      height: 210px;
+      overflow: hidden;
+    }
+
+    .service-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.5s;
+    }
+
+    .service-card:hover img {
+      transform: scale(1.08);
+    }
+
+    .service-content {
+      padding: 24px;
+    }
+
+    .service-icon {
+      width: 50px;
+      height: 50px;
+      background: #e5f6f5;
+      color: #087f8c;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 21px;
+      margin-bottom: 15px;
+    }
+
+    .service-content h3 {
+      color: #073b4c;
+      margin-bottom: 10px;
+    }
+
+    .service-content p {
+      font-size: 14px;
+      color: #6b7d84;
+      margin-bottom: 15px;
+    }
+
+    .service-content ul {
+      list-style: none;
+    }
+
+    .service-content li {
+      font-size: 13px;
+      margin: 7px 0;
+      color: #4b626b;
+    }
+
+    .service-content li i {
+      color: #087f8c;
+      margin-right: 7px;
+    }
+
+    /* =====================================================
+       APPOINTMENT
+    ===================================================== */
+
+    .appointment {
+      background:
+        linear-gradient(
+          90deg,
+          rgba(7,59,76,0.97),
+          rgba(7,59,76,0.85)
+        ),
+        url("https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1600&q=85")
+        center/cover;
+      color: white;
+    }
+
+    .appointment-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .appointment-info h2 {
+      font-size: 42px;
+      margin-bottom: 18px;
+    }
+
+    .appointment-info p {
+      color: #d9edf0;
+      margin-bottom: 25px;
+    }
+
+    .appointment-list {
+      list-style: none;
+    }
+
+    .appointment-list li {
+      margin: 15px 0;
+    }
+
+    .appointment-list i {
+      color: #56d6c2;
+      margin-right: 10px;
+    }
+
+    .appointment-form {
+      background: white;
+      padding: 35px;
+      border-radius: 20px;
+      color: #243746;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    }
+
+    .appointment-form h3 {
+      color: #073b4c;
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      font-size: 13px;
+      margin-bottom: 7px;
+      color: #39515d;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid #d7e2e6;
+      padding: 13px 14px;
+      border-radius: 9px;
+      outline: none;
+      font-family: inherit;
+      font-size: 14px;
+      background: #fbfdfe;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #087f8c;
+      box-shadow: 0 0 0 3px rgba(8,127,140,0.1);
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .submit-button {
+      width: 100%;
+      background: #087f8c;
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 9px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .submit-button:hover {
+      background: #073b4c;
+    }
+
+    /* =====================================================
+       LOGIN
+    ===================================================== */
+
+    .login-section {
+      background: white;
+    }
+
+    .login-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .login-card {
+      padding: 35px;
+      background: #f6fafb;
+      border: 1px solid #e2edef;
+      border-radius: 20px;
+    }
+
+    .login-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .login-header .icon {
+      width: 55px;
+      height: 55px;
+      border-radius: 14px;
+      background: #087f8c;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 23px;
+    }
+
+    .login-header h3 {
+      color: #073b4c;
+    }
+
+    .login-header p {
+      color: #778890;
+      font-size: 13px;
+    }
+
+    .login-card .form-group {
+      margin-bottom: 16px;
+    }
+
+    .login-submit {
+      width: 100%;
+      padding: 13px;
+      background: #073b4c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .login-submit:hover {
+      background: #087f8c;
+    }
+
+    /* =====================================================
+       GALLERY
+    ===================================================== */
+
+    .gallery {
+      background: #f5f9fb;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .gallery-item {
+      height: 250px;
+      border-radius: 15px;
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .gallery-item:first-child {
+      grid-column: span 2;
+      grid-row: span 2;
+      height: 518px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.5s;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.08);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        transparent,
+        rgba(3,38,48,0.8)
+      );
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+      color: white;
+      opacity: 0;
+      transition: 0.3s;
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    /* =====================================================
+       CONTACT
+    ===================================================== */
+
+    .contact {
+      background: white;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .contact-card {
+      background: #f6fafb;
+      padding: 30px;
+      border-radius: 17px;
+      text-align: center;
+      border: 1px solid #e2edef;
+    }
+
+    .contact-card i {
+      font-size: 30px;
+      color: #087f8c;
+      margin-bottom: 15px;
+    }
+
+    .contact-card h3 {
+      color: #073b4c;
+      margin-bottom: 8px;
+    }
+
+    .contact-card p,
+    .contact-card a {
+      color: #687982;
+    }
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    footer {
+      background: #052d3a;
+      color: #c9dde1;
+      padding: 60px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 45px;
+    }
+
+    footer h3 {
+      color: white;
+      margin-bottom: 18px;
+    }
+
+    footer p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin: 10px 0;
+    }
+
+    footer a {
+      color: #c9dde1;
+    }
+
+    footer a:hover {
+      color: #56d6c2;
+    }
+
+    .footer-social a {
+      width: 38px;
+      height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255,255,255,0.08);
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 20px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    /* =====================================================
+       EMERGENCY BUTTON
+    ===================================================== */
+
+    .emergency {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 999;
+      background: #d62828;
+      color: white;
+      padding: 13px 18px;
+      border-radius: 30px;
+      font-weight: 700;
+      box-shadow: 0 7px 20px rgba(214,40,40,0.3);
+    }
+
+    .emergency:hover {
+      background: #a91e1e;
+    }
+
+    /* =====================================================
+       MODAL
+    ===================================================== */
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 3000;
+      inset: 0;
+      background: rgba(0,0,0,0.85);
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal img {
+      max-width: 90%;
+      max-height: 85vh;
+      border-radius: 12px;
+    }
+
+    .close-modal {
+      position: absolute;
+      top: 25px;
+      right: 35px;
+      color: white;
+      font-size: 40px;
+      cursor: pointer;
+    }
+
+    /* =====================================================
+       NOTIFICATION
+    ===================================================== */
+
+    .notification {
+      position: fixed;
+      top: 95px;
+      right: 20px;
+      background: #073b4c;
+      color: white;
+      padding: 18px 23px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      display: none;
+      z-index: 4000;
+      max-width: 350px;
+    }
+
+    .notification.success {
+      border-left: 5px solid #56d6c2;
+    }
+
+    /* =====================================================
+       RESPONSIVE DESIGN
+    ===================================================== */
+
+    @media(max-width: 1000px) {
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .quick-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .quick-card:nth-child(2) {
+        border-right: none;
+      }
+
+      .quick-card:nth-child(-n+2) {
+        border-bottom: 1px solid #e7eef1;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media(max-width: 800px) {
+
+      .top-content {
+        justify-content: center;
+      }
+
+      .top-social {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      nav {
+        display: none;
+        position: absolute;
+        top: 82px;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      }
+
+      nav.active {
+        display: block;
+      }
+
+      nav ul {
+        flex-direction: column;
+        padding: 25px;
+      }
+
+      nav a {
+        display: block;
+      }
+
+      .about-grid,
+      .appointment-grid,
+      .login-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-image img {
+        height: 400px;
+      }
+
+      .experience-box {
+        right: 15px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media(max-width: 600px) {
+
+      .top-bar {
+        display: none;
+      }
+
+      .hero {
+        min-height: 580px;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .section {
+        padding: 65px 0;
+      }
+
+      .section-heading h2,
+      .about-text h2 {
+        font-size: 30px;
+      }
+
+      .services-grid,
+      .quick-grid,
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-card {
+        border-right: none;
+        border-bottom: 1px solid #e7eef1;
+      }
+
+      .gallery-item:first-child {
+        grid-column: auto;
+        grid-row: auto;
+        height: 300px;
+      }
+
+      .gallery-item {
+        height: 260px;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-group.full {
+        grid-column: auto;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .appointment-form {
+        padding: 25px;
+      }
+
+      .emergency {
+        right: 15px;
+        bottom: 15px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- =====================================================
+     TOP BAR
+===================================================== -->
+
+<div class="top-bar">
+
+  <div class="container top-content">
+
+    <div>
+      <span>
+        <i class="fas fa-phone"></i>
+        <a href="tel:0742873698" style="color:white;">
+          0742873698
+        </a>
+      </span>
+
+      <span>
+        <i class="fas fa-location-dot"></i>
+        Opposite Isibania Boys Secondary School
+      </span>
+    </div>
+
+    <div class="top-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+  <div class="container header-inner">
+
+    <a href="#" class="logo">
+
+      <div class="logo-icon">
+        <i class="fas fa-heart-pulse"></i>
+      </div>
+
+      <div class="logo-text">
+        <h2>EstherRobiClinic</h2>
+        <p>Headquarters</p>
+      </div>
+
+    </a>
+
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+
+
+    <nav id="navigation">
+
+      <ul>
+
+        <li>
+          <a href="#home">Home</a>
+        </li>
+
+        <li>
+          <a href="#about">About</a>
+        </li>
+
+        <li>
+          <a href="#services">Services</a>
+        </li>
+
+        <li>
+          <a href="#appointment">Appointment</a>
+        </li>
+
+        <li>
+          <a href="#gallery">Gallery</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+
+        <li>
+          <a href="#clientLogin" class="nav-button">
+            Client Portal
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="home">
+
+  <div class="container">
+
+    <div class="hero-content">
+
+      <span class="hero-tag">
+        <i class="fas fa-shield-heart"></i>
+        Compassionate Healthcare
+      </span>
+
+      <h1>
+        Your Health Is Our
+        <span>Priority</span>
+      </h1>
+
+      <p>
+        Welcome to EstherRobiClinic Headquarters.
+        We are committed to providing professional healthcare,
+        diagnostic and patient treatment services in a safe
+        and welcoming environment.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#appointment" class="btn btn-primary">
+          <i class="fas fa-calendar-check"></i>
+          Request Appointment
+        </a>
+
+        <a href="#services" class="btn btn-outline">
+          Explore Services
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK SERVICES
+===================================================== -->
+
+<section class="quick-section">
+
+  <div class="container">
+
+    <div class="quick-grid">
+
+      <div class="quick-card">
+
+        <i class="fas fa-stethoscope"></i>
+
+        <h3>Professional Care</h3>
+
+        <p>
+          Patient-focused healthcare
+        </p>
+
+      </div>
+
+
+      <div class="quick-card">
+
+        <i class="fas fa-x-ray"></i>
+
+        <h3>Diagnostics</h3>
+
+        <p>
+          Modern diagnostic services
+        </p>
+
+      </div>
+
+
+      <div class="quick-card">
+
+        <i class="fas fa-user-doctor"></i>
+
+        <h3>Patient Support</h3>
+
+        <p>
+          Compassionate assistance
+        </p>
+
+      </div>
+
+
+      <div class="quick-card">
+
+        <i class="fas fa-clock"></i>
+
+        <h3>Contact Us</h3>
+
+        <p>
+          Call 0742873698
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section class="section" id="about">
+
+  <div class="container">
+
+    <div class="about-grid">
+
+      <div class="about-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1000&q=85"
+          alt="Healthcare professionals providing patient care">
+
+        <div class="experience-box">
+
+          <strong>
+            <i class="fas fa-heart"></i>
+          </strong>
+
+          <span>
+            Caring for our community
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="about-text">
+
+        <div class="section-heading"
+             style="text-align:left;margin:0 0 20px;">
+
+          <div class="small-title">
+            About EstherRobiClinic
+          </div>
+
+        </div>
+
+        <h2>
+          Healthcare With Compassion
+        </h2>
+
+        <p>
+          EstherRobiClinic Headquarters is designed around
+          the needs of patients and families. Our goal is to
+          create a welcoming environment where patients can
+          access healthcare information, request services and
+          communicate with the clinic.
+        </p>
+
+        <p>
+          From screening and diagnostic services to patient
+          treatment and support, we strive to provide a
+          professional healthcare experience.
+        </p>
+
+        <ul class="check-list">
+
+          <li>
+            <i class="fas fa-circle-check"></i>
+            Patient-centered care
+          </li>
+
+          <li>
+            <i class="fas fa-circle-check"></i>
+            Modern healthcare environment
+          </li>
+
+          <li>
+            <i class="fas fa-circle-check"></i>
+            Diagnostic and screening services
+          </li>
+
+          <li>
+            <i class="fas fa-circle-check"></i>
+            Convenient appointment requests
+          </li>
+
+        </ul>
+
+        <a href="#contact" class="btn btn-primary">
+          Contact Our Clinic
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section class="section services" id="services">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="small-title">
+        What We Offer
+      </div>
+
+      <h2>
+        Our Healthcare Services
+      </h2>
+
+      <p>
+        Explore the healthcare and diagnostic services
+        available through EstherRobiClinic.
+      </p>
+
+    </div>
+
+
+    <div class="services-grid">
+
+
+      <!-- SCREENING -->
+
+      <div class="service-card">
+
+        <div class="service-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85"
+            alt="Healthcare professional performing patient screening">
+
+        </div>
+
+        <div class="service-content">
+
+          <div class="service-icon">
+            <i class="fas fa-heart-pulse"></i>
+          </div>
+
+          <h3>Health Screening</h3>
+
+          <p>
+            Routine screening and health assessment
+            services designed to support early detection.
+          </p>
+
+          <ul>
+
+            <li>
+              <i class="fas fa-check"></i>
+              General health checks
+            </li>
+
+            <li>
+              <i class="fas fa-check"></i>
+              Blood pressure screening
+            </li>
+
+            <li>
+              <i class="fas fa-check"></i>
+              Diabetes screening
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <!-- BODY SCANNING -->
+
+      <div class="service-card">
+
+        <div class="service-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?auto=format&fit=crop&w=900&q=85"
+            alt="Medical diagnostic equipment">
+
+        </div>
+
+        <div class="service-content">
+
+          <div class="service-icon">
+            <i class="fas fa-microscope"></i>
+          </div>
+
+          <h3>Body Scanning</h3>
+
+          <p>
+            Diagnostic imaging services for supporting
+            clinical assessment and diagnosis.
+          </p>
+
+          <ul>
+
+            <li>
+              <i class="fas fa-check"></i>
+              Diagnostic imaging
+            </li>
+
+            <li>
+              <i class="fas fa-check"></i>
+              Imaging consultations
+            </li>
+
+            <li>
+              <i class="fas fa-check"></i>
+              Medical assessment
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <!-- X-RAY -->
+
+      <div class="service-card">
+
+        <div class="service-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=900&q=85"
+            alt="Medical imaging and X-ray service">
+
+        </div>
+
+        <div class="service-content">
+
+          <div class="service-icon">
+            <i class="fas fa-x-ray"></i>
+          </div>
+
+          <h3>X-Ray Services</h3>
+
+          <p>
+            Imaging services to support medical assessment
+            where clinically appropriate.
+          </p>
+
+          <ul>
+
+            <li>
+              <i class="fas fa-check"></i>
+              Digital imaging
+            </li>
+
+            <li>
+              <i class="fas fa-check"></i>
+              Chest imaging
+            </li>
+
+            <li>
+              <i class="fas fa-check"></i>
+              Bone imaging
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <!-- TREATMENT -->
+
+      <div class="service-card">
+
+        <div class="service-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=900&q=85"
+            alt="Doctor providing patient treatment">
+
+        </div>
+
+        <div class="service-content">
+
+          <div class="service-icon">
+            <i class="fas fa-hospital-user"></i>
+          </div>
+
+          <h3>Patient Treatment</h3>
+
+          <p>
+            Patient support and treatment services
+            delivered in a professional environment.
+          </p>
+
+          <ul>
+
+            <li>
+              <i class="fas fa-check"></i>
+              Patient consultations
+            </li>
+
+            <li>
+              <i class="fas fa-check"></i>
+              Outpatient support
+            </li>
+
+            <li>
+              <i class="fas fa-check"></i>
+              Treatment support
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     APPOINTMENT
+===================================================== -->
+
+<section class="section appointment" id="appointment">
+
+  <div class="container">
+
+    <div class="appointment-grid">
+
+
+      <div class="appointment-info">
+
+        <div class="small-title" style="color:#56d6c2;">
+          APPOINTMENTS
+        </div>
+
+        <h2>
+          Request A Clinic Appointment
+        </h2>
+
+        <p>
+          Use the form to send an appointment request.
+          The clinic can then contact you to confirm
+          the appropriate date and time.
+        </p>
+
+        <ul class="appointment-list">
+
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Easy appointment request
+          </li>
+
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Patient information form
+          </li>
+
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Clinic contact details
+          </li>
+
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Convenient online access
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div class="appointment-form">
+
+        <h3>
+          Appointment Request
+        </h3>
+
+        <form onsubmit="submitAppointment(event)">
+
+          <div class="form-grid">
+
+            <div class="form-group">
+
+              <label>Full Name</label>
+
+              <input
+                type="text"
+                id="appointmentName"
+                placeholder="Enter your full name"
+                required>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label>Phone Number</label>
+
+              <input
+                type="tel"
+                id="appointmentPhone"
+                placeholder="07XXXXXXXX"
+                required>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label>Email Address</label>
+
+              <input
+                type="email"
+                id="appointmentEmail"
+                placeholder="you@example.com"
+                required>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label>Preferred Date</label>
+
+              <input
+                type="date"
+                id="appointmentDate"
+                required>
+
+            </div>
+
+
+            <div class="form-group full">
+
+              <label>Service Required</label>
+
+              <select id="appointmentService" required>
+
+                <option value="">
+                  Select a service
+                </option>
+
+                <option>
+                  Health Screening
+                </option>
+
+                <option>
+                  Body Scanning
+                </option>
+
+                <option>
+                  X-Ray Services
+                </option>
+
+                <option>
+                  Patient Treatment
+                </option>
+
+                <option>
+                  Consultation
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="form-group full">
+
+              <label>Additional Message</label>
+
+              <textarea
+                id="appointmentMessage"
+                placeholder="Tell us briefly how we can assist you"></textarea>
+
+            </div>
+
+          </div>
+
+          <button class="submit-button" type="submit">
+
+            <i class="fas fa-paper-plane"></i>
+            Send Appointment Request
+
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     CLIENT & ADMIN LOGIN
+===================================================== -->
+
+<section class="section login-section" id="clientLogin">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="small-title">
+        Secure Portal
+      </div>
+
+      <h2>
+        Client & Administrative Access
+      </h2>
+
+      <p>
+        Access the appropriate portal using your registered
+        information.
+      </p>
+
+    </div>
+
+
+    <div class="login-grid">
+
+
+      <!-- CLIENT -->
+
+      <div class="login-card">
+
+        <div class="login-header">
+
+          <div class="icon">
+            <i class="fas fa-user"></i>
+          </div>
+
+          <div>
+
+            <h3>
+              Client Login
+            </h3>
+
+            <p>
+              Patient access portal
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <form onsubmit="clientLogin(event)">
+
+          <div class="form-group">
+
+            <label>Email Address</label>
+
+            <input
+              type="email"
+              id="clientEmail"
+              required
+              placeholder="Enter your email">
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label>Phone Number</label>
+
+            <input
+              type="tel"
+              id="clientPhone"
+              required
+              placeholder="Enter phone number">
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label>Password</label>
+
+            <input
+              type="password"
+              id="clientPassword"
+              required
+              minlength="6"
+              placeholder="Enter password">
+
+          </div>
+
+
+          <button class="login-submit">
+
+            <i class="fas fa-right-to-bracket"></i>
+            Submit Verification
+
+          </button>
+
+        </form>
+
+      </div>
+
+
+      <!-- ADMIN -->
+
+      <div class="login-card" id="adminLogin">
+
+        <div class="login-header">
+
+          <div class="icon">
+            <i class="fas fa-user-shield"></i>
+          </div>
+
+          <div>
+
+            <h3>
+              Administrative Login
+            </h3>
+
+            <p>
+              Authorized personnel only
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <form onsubmit="adminLogin(event)">
+
+          <div class="form-group">
+
+            <label>Administrator Email</label>
+
+            <input
+              type="email"
+              id="adminEmail"
+              required
+              placeholder="admin@example.com">
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label>Code Number</label>
+
+            <input
+              type="text"
+              id="adminCode"
+              required
+              placeholder="Enter administrator code">
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label>Password</label>
+
+            <input
+              type="password"
+              id="adminPassword"
+              required
+              placeholder="Enter password">
+
+          </div>
+
+
+          <button class="login-submit">
+
+            <i class="fas fa-lock"></i>
+            Admin Login
+
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     GALLERY
+===================================================== -->
+
+<section class="section gallery" id="gallery">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="small-title">
+        Our Environment
+      </div>
+
+      <h2>
+        Healthcare Gallery
+      </h2>
+
+      <p>
+        A visual look at modern healthcare environments,
+        clinical care and patient support.
+      </p>
+
+    </div>
+
+
+    <div class="gallery-grid">
+
+
+      <div class="gallery-item"
+           onclick="openImage(this)">
+
+        <img
+          src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=85"
+          alt="Modern hospital building">
+
+        <div class="gallery-overlay">
+          <h3>Modern Healthcare Environment</h3>
+        </div>
+
+      </div>
+
+
+      <div class="gallery-item"
+           onclick="openImage(this)">
+
+        <img
+          src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=900&q=85"
+          alt="Hospital corridor">
+
+        <div class="gallery-overlay">
+          <h3>Hospital Environment</h3>
+        </div>
+
+      </div>
+
+
+      <div class="gallery-item"
+           onclick="openImage(this)">
+
+        <img
+          src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=900&q=85"
+          alt="Hospital room">
+
+        <div class="gallery-overlay">
+          <h3>Patient Care</h3>
+        </div>
+
+      </div>
+
+
+      <div class="gallery-item"
+           onclick="openImage(this)">
+
+        <img
+          src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=900&q=85"
+          alt="Medical professional">
+
+        <div class="gallery-overlay">
+          <h3>Medical Professionals</h3>
+        </div>
+
+      </div>
+
+
+      <div class="gallery-item"
+           onclick="openImage(this)">
+
+        <img
+          src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=900&q=85"
+          alt="Medical team">
+
+        <div class="gallery-overlay">
+          <h3>Healthcare Team</h3>
+        </div>
+
+      </div>
+
+
+      <div class="gallery-item"
+           onclick="openImage(this)">
+
+        <img
+          src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=900&q=85"
+          alt="Doctor consultation">
+
+        <div class="gallery-overlay">
+          <h3>Patient Consultation</h3>
+        </div>
+
+      </div>
+
+
+      <div class="gallery-item"
+           onclick="openImage(this)">
+
+        <img
+          src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=900&q=85"
+          alt="Healthcare professional">
+
+        <div class="gallery-overlay">
+          <h3>Professional Healthcare</h3>
+        </div>
+
+      </div>
+
+
+      <div class="gallery-item"
+           onclick="openImage(this)">
+
+        <img
+          src="https://images.unsplash.com/photo-1638202993928-7d113b8c52c7?auto=format&fit=crop&w=900&q=85"
+          alt="Medical consultation">
+
+        <div class="gallery-overlay">
+          <h3>Medical Consultation</h3>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="section contact" id="contact">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="small-title">
+        Get In Touch
+      </div>
+
+      <h2>
+        Contact EstherRobiClinic
+      </h2>
+
+      <p>
+        Anyone wishing to reach out is welcome.
+        Contact the clinic using the information below.
+      </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+
+      <div class="contact-card">
+
+        <i class="fas fa-location-dot"></i>
+
+        <h3>
+          Our Location
+        </h3>
+
+        <p>
+          Opposite Isibania Boys Secondary School
+        </p>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <i class="fas fa-phone"></i>
+
+        <h3>
+          Phone
+        </h3>
+
+        <a href="tel:0742873698">
+          0742873698
+        </a>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <i class="fas fa-clock"></i>
+
+        <h3>
+          Contact Us
+        </h3>
+
+        <p>
+          Contact the clinic for service
+          availability and appointment information.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+
+      <div>
+
+        <h3>
+          EstherRobiClinic
+        </h3>
+
+        <p>
+          Providing a welcoming digital gateway to
+          EstherRobiClinic Headquarters and its healthcare
+          services.
+        </p>
+
+        <br>
+
+        <div class="footer-social">
+
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Quick Links
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="#home">Home</a>
+          </li>
+
+          <li>
+            <a href="#about">About Us</a>
+          </li>
+
+          <li>
+            <a href="#services">Services</a>
+          </li>
+
+          <li>
+            <a href="#appointment">Appointments</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Services
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="#services">
+              Health Screening
+            </a>
+          </li>
+
+          <li>
+            <a href="#services">
+              Body Scanning
+            </a>
+          </li>
+
+          <li>
+            <a href="#services">
+              X-Ray Services
+            </a>
+          </li>
+
+          <li>
+            <a href="#services">
+              Patient Treatment
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Contact
+        </h3>
+
+        <p>
+          <i class="fas fa-location-dot"></i>
+          Opposite Isibania Boys Secondary School
+        </p>
+
+        <p>
+          <i class="fas fa-phone"></i>
+          <a href="tel:0742873698">
+            0742873698
+          </a>
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+      <p>
+        &copy; <span id="year"></span>
+        EstherRobiClinic Headquarters.
+        All Rights Reserved.
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- =====================================================
+     EMERGENCY PHONE
+===================================================== -->
+
+<a href="tel:0742873698" class="emergency">
+
+  <i class="fas fa-phone"></i>
+  Call Clinic
+
+</a>
+
+
+<!-- =====================================================
+     IMAGE MODAL
+===================================================== -->
+
+<div class="modal" id="imageModal">
+
+  <span class="close-modal"
+        onclick="closeImage()">
+    &times;
+  </span>
+
+  <img id="modalImage" src="" alt="Expanded clinic image">
+
+</div>
+
+
+<!-- =====================================================
+     NOTIFICATION
+===================================================== -->
+
+<div class="notification success"
+     id="notification">
+
+  <i class="fas fa-circle-check"></i>
+  <span id="notificationText"></span>
+
+</div>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+  /* -----------------------------------------------------
+     MOBILE MENU
+  ----------------------------------------------------- */
+
+  function toggleMenu() {
+
+    const nav =
+      document.getElementById("navigation");
+
+    nav.classList.toggle("active");
+
+  }
+
+
+  /* -----------------------------------------------------
+     CLOSE MOBILE MENU AFTER CLICK
+  ----------------------------------------------------- */
+
+  document.querySelectorAll("nav a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+      document
+        .getElementById("navigation")
+        .classList.remove("active");
+
+    });
+
+  });
+
+
+  /* -----------------------------------------------------
+     NOTIFICATION
+  ----------------------------------------------------- */
+
+  function showNotification(message) {
+
+    const notification =
+      document.getElementById("notification");
+
+    const text =
+      document.getElementById("notificationText");
+
+    text.textContent = message;
+
+    notification.style.display = "block";
+
+    setTimeout(() => {
+
+      notification.style.display = "none";
+
+    }, 5000);
+
+  }
+
+
+  /* -----------------------------------------------------
+     APPOINTMENT
+  ----------------------------------------------------- */
+
+  function submitAppointment(event) {
+
+    event.preventDefault();
+
+    const name =
+      document.getElementById("appointmentName").value;
+
+    const service =
+      document.getElementById("appointmentService").value;
+
+    showNotification(
+      "Thank you " +
+      name +
+      ". Your " +
+      service +
+      " appointment request has been received. The clinic can contact you to confirm the appointment."
+    );
+
+    event.target.reset();
+
+  }
+
+
+  /* -----------------------------------------------------
+     CLIENT LOGIN
+  ----------------------------------------------------- */
+
+  function clientLogin(event) {
+
+    event.preventDefault();
+
+    const email =
+      document.getElementById("clientEmail").value;
+
+    showNotification(
+      "Client verification submitted for " +
+      email +
+      ". This demonstration portal does not connect to a real database yet."
+    );
+
+    event.target.reset();
+
+  }
+
+
+  /* -----------------------------------------------------
+     ADMIN LOGIN
+  ----------------------------------------------------- */
+
+  function adminLogin(event) {
+
+    event.preventDefault();
+
+    showNotification(
+      "Administrative login submitted. A real production system requires secure server-side authentication."
+    );
+
+    event.target.reset();
+
+  }
+
+
+  /* -----------------------------------------------------
+     GALLERY MODAL
+  ----------------------------------------------------- */
+
+  function openImage(element) {
+
+    const image =
+      element.querySelector("img");
+
+    const modal =
+      document.getElementById("imageModal");
+
+    const modalImage =
+      document.getElementById("modalImage");
+
+    modalImage.src = image.src;
+
+    modalImage.alt = image.alt;
+
+    modal.style.display = "flex";
+
+  }
+
+
+  function closeImage() {
+
+    document
+      .getElementById("imageModal")
+      .style.display = "none";
+
+  }
+
+
+  /* Close modal by clicking outside image */
+
+  document
+    .getElementById("imageModal")
+    .addEventListener("click", function(event) {
+
+      if (event.target === this) {
+
+        closeImage();
+
+      }
+
+    });
+
+
+  /* -----------------------------------------------------
+     CURRENT YEAR
+  ----------------------------------------------------- */
+
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+
+  /* -----------------------------------------------------
+     PREVENT PAST APPOINTMENT DATES
+  ----------------------------------------------------- */
+
+  const dateInput =
+    document.getElementById("appointmentDate");
+
+  const today =
+    new Date().toISOString().split("T")[0];
+
+  dateInput.min = today;
+
+</script>
+
+</body>
+</html>
